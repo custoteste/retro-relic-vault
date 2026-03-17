@@ -1,6 +1,6 @@
-import heroComics from "@/assets/hero-comics.jpg";
+import comic4 from "@/assets/comic4.jpg";
 import comic1 from "@/assets/comic1.jpg";
-import comic2 from "@/assets/comic2.jpg";
+import comic5 from "@/assets/comic5.jpg";
 import TopBar from "./TopBar";
 
 const HeroSection = () => {
