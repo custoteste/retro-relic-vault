@@ -4,8 +4,13 @@ import comic2 from "@/assets/comic2.jpg";
 import comic3 from "@/assets/comic3.jpg";
 import comic4 from "@/assets/comic4.jpg";
 import comic5 from "@/assets/comic5.jpg";
+import comic6 from "@/assets/comic6.jpg";
+import comic7 from "@/assets/comic7.jpg";
+import comic8 from "@/assets/comic8.jpg";
+import comic9 from "@/assets/comic9.jpg";
+import comic10 from "@/assets/comic10.jpg";
 
-const covers = [comic1, comic2, comic3, comic4, comic5, comic1, comic2, comic3, comic4, comic5];
+const covers = [comic1, comic2, comic3, comic4, comic5, comic6, comic7, comic8, comic9, comic10];
 
 const GallerySection = () => {
   const trackRef = useRef<HTMLDivElement>(null);
