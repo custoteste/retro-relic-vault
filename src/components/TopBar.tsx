@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const TopBar = () => {
-  const [time, setTime] = useState(179); // 2:59
+  const [time, setTime] = useState(179);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,7 +20,7 @@ const TopBar = () => {
       <span className="bg-[hsl(50,60%,20%)] text-yellow-300 font-extrabold text-sm px-2.5 py-0.5 rounded min-w-[56px] text-center">
         {mins}:{secs}
       </span>
-      <span className="text-dark-foreground text-sm font-semibold">para asegurar el descuento!</span>
+      <span className="text-dark-foreground text-sm font-semibold">para asegurar el precio especial!</span>
     </div>
   );
 };

@@ -7,9 +7,11 @@ import PricingSection from "@/components/PricingSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import FAQSection from "@/components/FAQSection";
 import FooterSection from "@/components/FooterSection";
+import SocialProofPopup from "@/components/SocialProofPopup";
 
 const Index = () => (
   <div className="min-h-screen">
+    <SocialProofPopup />
     <HeroSection />
     <BenefitsSection />
     <GallerySection />
