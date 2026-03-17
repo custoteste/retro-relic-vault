@@ -25,7 +25,7 @@ const HeroSection = () => {
           <div className="bg-[#1a1a1a] rounded-2xl p-1 shadow-[0_20px_60px_rgba(0,0,0,0.6)] w-[90px] max-[520px]:w-[72px] -rotate-6 translate-x-[18px] z-[1]">
             <div className="bg-dark rounded-xl overflow-hidden">
               <div className="w-[30px] h-[5px] bg-[#1a1a1a] rounded mx-auto mt-1.5 mb-0.5" />
-              <img src={comic1} alt="Comic clásico" className="h-[115px] max-[520px]:h-[95px] w-full object-cover" />
+              <img src={comic1} alt="Kalimán" className="h-[115px] max-[520px]:h-[95px] w-full object-cover" />
             </div>
           </div>
           <div className="bg-[#1a1a1a] rounded-[20px] p-1 shadow-[0_20px_60px_rgba(0,0,0,0.6)] w-[180px] max-[520px]:w-[148px] border-2 border-primary/30 z-[3]">
