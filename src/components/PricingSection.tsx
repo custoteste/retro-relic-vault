@@ -48,7 +48,7 @@ const PricingSection = () => (
             </div>
           </div>
 
-          <a href="https://pay.cakto.com.br/3925p2w" className="block bg-dark text-dark-foreground text-[15px] font-black py-4 rounded-full text-center uppercase tracking-wider hover:bg-dark/80 transition mt-2">
+          <a href="https://pay.hotmart.com/F104932029B" className="block bg-dark text-dark-foreground text-[15px] font-black py-4 rounded-full text-center uppercase tracking-wider hover:bg-dark/80 transition mt-2">
             SÍ, QUIERO MI ARCHIVO ESTA NOCHE
           </a>
         </div>
