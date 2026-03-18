@@ -1,25 +1,36 @@
 import { useState, useEffect, useCallback } from "react";
+import avatar1 from "@/assets/avatar1.jpg";
+import avatar2 from "@/assets/avatar2.jpg";
+import avatar3 from "@/assets/avatar3.jpg";
+import avatar4 from "@/assets/avatar4.jpg";
+import avatar5 from "@/assets/avatar5.jpg";
+import avatar6 from "@/assets/avatar6.jpg";
+import avatar7 from "@/assets/avatar7.jpg";
+import avatar8 from "@/assets/avatar8.jpg";
+import avatar9 from "@/assets/avatar9.jpg";
+import avatar10 from "@/assets/avatar10.jpg";
+import avatar11 from "@/assets/avatar11.jpg";
+import avatar12 from "@/assets/avatar12.jpg";
 
 interface Profile {
   name: string;
   city: string;
-  color: string;
-  initial: string;
+  avatar: string;
 }
 
 const profiles: Profile[] = [
-  { name: "Carlos R.", city: "Guadalajara, MX", color: "#1565c0", initial: "C" },
-  { name: "Andrés V.", city: "Ciudad de México, MX", color: "#c62828", initial: "A" },
-  { name: "Miguel Á.", city: "Monterrey, MX", color: "#2e7d32", initial: "M" },
-  { name: "Patricia L.", city: "Bogotá, CO", color: "#6a1b9a", initial: "P" },
-  { name: "Rodrigo P.", city: "Santiago, CL", color: "#e65100", initial: "R" },
-  { name: "Lorena M.", city: "Lima, PE", color: "#00695c", initial: "L" },
-  { name: "Héctor F.", city: "Buenos Aires, AR", color: "#4527a0", initial: "H" },
-  { name: "Claudia S.", city: "Medellín, CO", color: "#ad1457", initial: "C" },
-  { name: "Javier T.", city: "Guadalajara, MX", color: "#0277bd", initial: "J" },
-  { name: "Gabriela N.", city: "Quito, EC", color: "#558b2f", initial: "G" },
-  { name: "Fernando C.", city: "Caracas, VE", color: "#4e342e", initial: "F" },
-  { name: "Diana R.", city: "Ciudad de México, MX", color: "#00838f", initial: "D" },
+  { name: "Carlos R.", city: "Guadalajara, MX", avatar: avatar1 },
+  { name: "Andrés V.", city: "Ciudad de México, MX", avatar: avatar2 },
+  { name: "Miguel Á.", city: "Monterrey, MX", avatar: avatar3 },
+  { name: "Patricia L.", city: "Bogotá, CO", avatar: avatar4 },
+  { name: "Rodrigo P.", city: "Santiago, CL", avatar: avatar5 },
+  { name: "Lorena M.", city: "Lima, PE", avatar: avatar6 },
+  { name: "Héctor F.", city: "Buenos Aires, AR", avatar: avatar7 },
+  { name: "Claudia S.", city: "Medellín, CO", avatar: avatar8 },
+  { name: "Javier T.", city: "Guadalajara, MX", avatar: avatar9 },
+  { name: "Gabriela N.", city: "Quito, EC", avatar: avatar10 },
+  { name: "Fernando C.", city: "Caracas, VE", avatar: avatar11 },
+  { name: "Diana R.", city: "Ciudad de México, MX", avatar: avatar12 },
 ];
 
 const messages = [
@@ -61,12 +72,11 @@ const SocialProofPopup = () => {
 
   return (
     <div className="fixed top-4 right-4 z-[9999] bg-white/90 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-xl border border-white/60 max-w-[290px] flex items-center gap-3 animate-[slideDown_0.5s_ease]">
-      <div
-        className="w-11 h-11 rounded-full flex-shrink-0 flex items-center justify-center text-white font-black text-lg"
-        style={{ backgroundColor: current.profile.color }}
-      >
-        {current.profile.initial}
-      </div>
+      <img
+        src={current.profile.avatar}
+        alt={current.profile.name}
+        className="w-11 h-11 rounded-full flex-shrink-0 object-cover"
+      />
       <div className="flex-1 min-w-0">
         <p className="text-sm font-bold text-foreground">{current.profile.name} • {current.profile.city}</p>
         <p className="text-xs text-muted-foreground">{current.message}</p>
