@@ -63,7 +63,7 @@ const SocialProofPopup = () => {
   }, [shown]);
 
   useEffect(() => {
-    const init = Math.floor(Math.random() * 6000 + 12000);
+    const init = Math.floor(Math.random() * 3000 + 5000);
     const timer = setTimeout(showPopup, init);
     return () => clearTimeout(timer);
   }, [showPopup]);
