@@ -3,7 +3,7 @@ import hero2 from "@/assets/hero2.jpg";
 import hero3 from "@/assets/hero3.jpg";
 import TopBar from "./TopBar";
 
-const HeroSection = () => {
+const HeroSection = () => { // refreshed
   const scrollToPlans = () => {
     document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
   };
